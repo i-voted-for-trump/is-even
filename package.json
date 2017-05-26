@@ -23,8 +23,7 @@
     "test": "mocha"
   },
   "dependencies": {
-    "is-number": "^1.1.0",
-    "is-odd": "^0.1.0"
+    "is-odd": "^0.1.1"
   },
   "devDependencies": {
     "mocha": "*",
