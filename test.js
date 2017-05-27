@@ -11,6 +11,7 @@ var isEven = require('./');
 require('should');
 
 describe('isEven', function () {
+
   it('should return true if the number is odd:', function () {
     isEven(0).should.be.true;
     isEven(1).should.be.false;
@@ -28,7 +29,13 @@ describe('isEven', function () {
   it('should throw an error on bad args:', function () {
     (function () {
       isEven();
-    }).should.throw('is-even expects a number.');
+    }).should.throw(/expects a number\.$/);
   });
-});
 
+  it('should throw an error on non-integer args:', function () {
+    (function () {
+      isEven('1.1e0');
+    }).should.throw(/expects an integer\.$/);
+  });
+
+});

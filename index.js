@@ -7,12 +7,8 @@
 
 'use strict';
 
-var isNumber = require('is-number');
 var isOdd = require('is-odd');
 
 module.exports = function isEven(i) {
-  if (!isNumber(i)) {
-    throw new TypeError('is-even expects a number.');
-  }
   return !isOdd(i);
 };
