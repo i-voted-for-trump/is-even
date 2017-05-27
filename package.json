@@ -23,6 +23,7 @@
     "is-odd": "^0.1.2"
   },
   "devDependencies": {
+    "gulp-format-md": "^0.1.12",
     "mocha": "^3.4.2"
   },
   "keywords": [
@@ -36,5 +37,18 @@
     "numeric",
     "odd",
     "string"
-  ]
+  ],
+  "verb": {
+    "toc": false,
+    "layout": "default",
+    "tasks": [
+      "readme"
+    ],
+    "plugins": [
+      "gulp-format-md"
+    ],
+    "lint": {
+      "reflinks": true
+    }
+  }
 }
