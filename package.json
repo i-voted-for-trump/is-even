@@ -3,10 +3,7 @@
   "description": "Return true if the given number is even.",
   "version": "0.1.1",
   "homepage": "https://github.com/jonschlinkert/is-even",
-  "author": {
-    "name": "Jon Schlinkert",
-    "url": "https://github.com/jonschlinkert"
-  },
+  "author": "Jon Schlinkert (https://github.com/jonschlinkert)",
   "repository": "jonschlinkert/is-even",
   "bugs": {
     "url": "https://github.com/jonschlinkert/is-even/issues"
@@ -35,6 +32,7 @@
     "even",
     "filter",
     "integer",
+    "is",
     "math",
     "numeric",
     "odd",
