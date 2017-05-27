@@ -20,11 +20,10 @@
     "test": "mocha"
   },
   "dependencies": {
-    "is-odd": "^0.1.1"
+    "is-odd": "^0.1.2"
   },
   "devDependencies": {
-    "mocha": "*",
-    "should": "*"
+    "mocha": "^3.4.2"
   },
   "keywords": [
     "array",
