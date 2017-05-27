@@ -7,35 +7,34 @@
 
 'use strict';
 
+require('mocha');
+var assert = require('assert');
 var isEven = require('./');
-require('should');
 
 describe('isEven', function() {
-
   it('should return true if the number is odd:', function() {
-    isEven(0).should.be.true;
-    isEven(1).should.be.false;
-    isEven(2).should.be.true;
-    isEven(3).should.be.false;
+    assert(isEven(0));
+    assert(!isEven(1));
+    assert(isEven(2));
+    assert(!isEven(3));
   });
 
   it('should work with strings:', function() {
-    isEven('0').should.be.true;
-    isEven('1').should.be.false;
-    isEven('2').should.be.true;
-    isEven('3').should.be.false;
+    assert(isEven('0'));
+    assert(!isEven('1'));
+    assert(isEven('2'));
+    assert(!isEven('3'));
   });
 
   it('should throw an error on bad args:', function() {
-    (function() {
+    assert.throws(function() {
       isEven();
-    }).should.throw(/expects a number\.$/);
+    }, /expects a number\.$/);
   });
 
   it('should throw an error on non-integer args:', function() {
-    (function() {
+    assert.throws(function() {
       isEven('1.1e0');
-    }).should.throw(/expects an integer\.$/);
+    }, /expects an integer\.$/);
   });
-
 });
