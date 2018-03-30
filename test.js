@@ -12,7 +12,7 @@ var assert = require('assert');
 var isEven = require('./');
 
 describe('isEven', function() {
-  it('should return true if the number is odd:', function() {
+  it('should return true if the number is even:', function() {
     assert(isEven(0));
     assert(!isEven(1));
     assert(isEven(2));
