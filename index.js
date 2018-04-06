@@ -7,7 +7,7 @@
 
 'use strict';
 
-var isOdd = require('is-odd');
+const isOdd = require('is-odd');
 
 module.exports = function isEven(i) {
   return !isOdd(i);
